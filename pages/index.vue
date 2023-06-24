@@ -12,10 +12,20 @@ const blocksList = {
         {
           name: 'col',
           classes: ['xs-2'],
+          blocks: [{
+            name: 'text',
+            classes: ['text-body-l'],
+            content: 'Left side'
+          }]
         },
         {
           name: 'col',
           classes: ['xs-2'],
+          blocks: [{
+            name: 'text',
+            classes: ['text-body-l'],
+            content: 'Right site'
+          }]
         },
       ],
     },
