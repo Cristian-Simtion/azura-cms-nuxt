@@ -7,7 +7,14 @@ const blocksList = {
   blocks: [
     {
       name: 'row',
-      blocks: [],
+      blocks: [
+        {
+          name: 'col',
+        },
+        {
+          name: 'col',
+        },
+      ],
     },
     {
       name: 'row',

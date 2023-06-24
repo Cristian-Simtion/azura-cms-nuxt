@@ -1,8 +1,18 @@
 <template>
   <div class="container">
-    <div class="row">ROW XXXXXXXXXXXXXXXX</div>
+    <div class="row">
+      <component
+        v-for="block in blocksList.blocks"
+        :is="getComponent[block.name]"
+        :block="block"
+      ></component>
+    </div>
   </div>
 </template>
+
+<script setup>
+
+</script>
 
 <style>
 .container {
