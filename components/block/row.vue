@@ -1,18 +1,26 @@
+<script setup>
+const props = defineProps({
+  block: Object
+});
+
+const getComponent = {
+  col: resolveComponent('Col'),
+};
+</script>
+
 <template>
   <div class="container">
     <div class="row">
       <component
-        v-for="block in blocksList.blocks"
-        :is="getComponent[block.name]"
-        :block="block"
+        v-for="innerBlock in block.blocks"
+        :is="getComponent[innerBlock.name]"
+        :block="innerBlock"
       ></component>
     </div>
   </div>
 </template>
 
-<script setup>
 
-</script>
 
 <style>
 .container {

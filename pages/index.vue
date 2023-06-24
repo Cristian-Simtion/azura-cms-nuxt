@@ -1,6 +1,7 @@
 <script setup>
 const getComponent = {
   row: resolveComponent('Row'),
+  col: resolveComponent('Col'),
 };
 
 const blocksList = {
@@ -10,9 +11,11 @@ const blocksList = {
       blocks: [
         {
           name: 'col',
+          classes: ['xs-2'],
         },
         {
           name: 'col',
+          classes: ['xs-2'],
         },
       ],
     },
