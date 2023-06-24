@@ -372,3 +372,1011 @@ template {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Primary color */
+  --primary-10: #0b1b36;
+  --primary-20: #22304c;
+  --primary-30: #384764;
+  --primary-40: #505e7d;
+  --primary-50: #697797;
+  --primary-60: #8291b2;
+  --primary-70: #9dabce;
+  --primary-80: #b8c6ea;
+  --primary-90: #d8e2ff;
+  --primary-95: #edf0ff;
+  --primary-99: #fefbff;
+
+  --primary-light-opacity-05: #505e7d0d;
+  --primary-light-opacity-12: #505e7d1f;
+  --primary-light-opacity-16: #505e7d29;
+  --primary-light-opacity-32: #505e7d52;
+  --primary-light-opacity-64: #505e7da3;
+
+  --primary-dark-opacity-05: #b8c6ea0d;
+  --primary-dark-opacity-12: #b8c6ea1f;
+  --primary-dark-opacity-16: #b8c6ea29;
+  --primary-dark-opacity-32: #b8c6ea52;
+  --primary-dark-opacity-64: #b8c6eaa3;
+
+  /* Secondary color */
+  --secondary-10: #002023;
+  --secondary-20: #00363b;
+  --secondary-30: #004f55;
+  --secondary-40: #006971;
+  --secondary-50: #00848e;
+  --secondary-60: #00a0ac;
+  --secondary-70: #19bdca;
+  --secondary-80: #4bd9e6;
+  --secondary-90: #83f3ff;
+  --secondary-95: #c9f9ff;
+  --secondary-99: #f4feff;
+
+  --secondary-light-opacity-05: #0069710d;
+  --secondary-light-opacity-12: #0069711f;
+  --secondary-light-opacity-16: #00697129;
+  --secondary-light-opacity-32: #00697152;
+  --secondary-light-opacity-64: #006971a3;
+
+  --secondary-dark-opacity-05: #4bd9e60d;
+  --secondary-dark-opacity-12: #4bd9e61f;
+  --secondary-dark-opacity-16: #4bd9e629;
+  --secondary-dark-opacity-32: #4bd9e652;
+  --secondary-dark-opacity-64: #4bd9e6a3;
+
+  /* Tertiary color */
+  --tertiary-10: #31111d;
+  --tertiary-20: #492532;
+  --tertiary-30: #633b48;
+  --tertiary-40: #7d5260;
+  --tertiary-50: #986a79;
+  --tertiary-60: #b48392;
+  --tertiary-70: #d19dad;
+  --tertiary-80: #eeb8c8;
+  --tertiary-90: #ffd9e3;
+  --tertiary-95: #ffecf0;
+  --tertiary-99: #fffbff;
+
+  --tertiary-light-opacity-05: #7d52600d;
+  --tertiary-light-opacity-12: #7d52601f;
+  --tertiary-light-opacity-16: #7d526029;
+  --tertiary-light-opacity-32: #7d526052;
+  --tertiary-light-opacity-64: #7d5260a3;
+
+  --tertiary-dark-opacity-05: #eeb8c80d;
+  --tertiary-dark-opacity-12: #eeb8c81f;
+  --tertiary-dark-opacity-16: #eeb8c829;
+  --tertiary-dark-opacity-32: #eeb8c852;
+  --tertiary-dark-opacity-64: #eeb8c8a3;
+
+  /* Error color */
+  --error-10: #410e0b;
+  --error-20: #601410;
+  --error-30: #8c1d18;
+  --error-40: #b3261e;
+  --error-50: #dc362e;
+  --error-60: #e46962;
+  --error-70: #ec928e;
+  --error-80: #f2b8b5;
+  --error-90: #f9dedc;
+  --error-95: #fceeee;
+  --error-99: #fffbf9;
+
+  --error-light-opacity-05: #b3261e0d;
+  --error-light-opacity-12: #b3261e1f;
+  --error-light-opacity-16: #b3261e29;
+  --error-light-opacity-32: #b3261e52;
+  --error-light-opacity-64: #b3261ea3;
+
+  --error-dark-opacity-05: #f2b8b50d;
+  --error-dark-opacity-12: #f2b8b51f;
+  --error-dark-opacity-16: #f2b8b529;
+  --error-dark-opacity-32: #f2b8b552;
+  --error-dark-opacity-64: #f2b8b5a3;
+
+  /* Neutral color */
+  --neutral-10: #191c1d;
+  --neutral-20: #2d3131;
+  --neutral-30: #444748;
+  --neutral-40: #5c5f5f;
+  --neutral-50: #747878;
+  --neutral-60: #8e9191;
+  --neutral-70: #a9acac;
+  --neutral-80: #c4c7c7;
+  --neutral-90: #e0e3e3;
+  --neutral-95: #eff1f1;
+  --neutral-99: #fafdfd;
+
+  --neutral-light-opacity-05: #5c5f5f0d;
+  --neutral-light-opacity-12: #5c5f5f1f;
+  --neutral-light-opacity-16: #5c5f5f29;
+  --neutral-light-opacity-32: #5c5f5f52;
+  --neutral-light-opacity-64: #5c5f5fa3;
+
+  --neutral-dark-opacity-05: #c4c7c70d;
+  --neutral-dark-opacity-12: #c4c7c71f;
+  --neutral-dark-opacity-16: #c4c7c729;
+  --neutral-dark-opacity-32: #c4c7c752;
+  --neutral-dark-opacity-64: #c4c7c7a3;
+
+  /* Neutral Variant color */
+  --neutral-v-10: #1c1b22;
+  --neutral-v-20: #312f37;
+  --neutral-v-30: #48454e;
+  --neutral-v-40: #605d66;
+  --neutral-v-50: #79757f;
+  --neutral-v-60: #938f99;
+  --neutral-v-70: #aea9b3;
+  --neutral-v-80: #c9c4cf;
+  --neutral-v-90: #e6e0eb;
+  --neutral-v-95: #f4eff9;
+  --neutral-v-99: #fffbff;
+
+  --neutral-v-light-opacity-05: #605d660d;
+  --neutral-v-light-opacity-12: #605d661f;
+  --neutral-v-light-opacity-16: #605d6629;
+  --neutral-v-light-opacity-32: #605d6652;
+  --neutral-v-light-opacity-64: #605d66a3;
+
+  --neutral-v-dark-opacity-05: #c9c4cf0d;
+  --neutral-v-dark-opacity-12: #c9c4cf1f;
+  --neutral-v-dark-opacity-16: #c9c4cf29;
+  --neutral-v-dark-opacity-32: #c9c4cf52;
+  --neutral-v-dark-opacity-64: #c9c4cfa3;
+}
+
+/*--------------------------------------------------------------
+# LIGHT THEME BACKGROUND COLORS
+--------------------------------------------------------------*/
+
+.bg-primary {
+	color: #FFFFFF;
+	background-color: var(--primary-40);
+}
+
+.bg-primary-05 {
+	color: #FFFFFF;
+	background-color: var(--primary-light-opacity-05);
+}
+
+.bg-primary-12 {
+	color: #FFFFFF;
+	background-color: var(--primary-light-opacity-12);
+}
+
+.bg-primary-16 {
+	color: #FFFFFF;
+	background-color: var(--primary-light-opacity-16);
+}
+
+.bg-primary-32 {
+	color: #FFFFFF;
+	background-color: var(--primary-light-opacity-32);
+}
+
+.bg-primary-64 {
+	color: #FFFFFF;
+	background-color: var(--primary-light-opacity-64);
+}
+
+.bg-on-primary {
+	color: var(--primary-10);
+	background-color: var(--primary-90);
+}
+
+.bg-secondary {
+	color: #FFFFFF;
+	background-color: var(--secondary-40);
+}
+
+.bg-on-secondary {
+	color: var(--secondary-10);
+	background-color: var(--secondary-90);
+}
+
+.bg-tertiary {
+	color: #FFFFFF;
+	background-color: var(--tertiary-40);
+}
+
+.bg-on-tertiary {
+	color: var(--tertiary-10);
+	background-color: var(--tertiary-90);
+}
+
+.bg-error {
+	color: #FFFFFF;
+	background-color: var(--error-40);
+}
+
+.bg-on-error {
+	color: var(--error-10);
+	background-color: var(--error-90);
+}
+
+.bg-background {
+	color: var(--neutral-10);
+	background-color: var(--neutral-99);
+}
+
+.bg-surface {
+	color: var(--neutral-10);
+	background-color: var(--neutral-99);
+}
+
+.bg-surface-variant {
+	color: var(--neutral-v-30);
+	background-color: var(--neutral-90);
+}
+
+.outline {
+	border: 1px solid var(--neutral-v-50);
+}
+
+/*--------------------------------------------------------------
+# LIGHT THEME COLORS
+--------------------------------------------------------------*/
+
+.color-primary {
+	color: var(--primary-40) !important;
+}
+
+.color-on-primary {
+	color: var(--primary-90) !important;
+}
+
+.color-secondary {
+	color: var(--secondary-40) !important;
+}
+
+.color-on-secondary {
+	color: var(--secondary-90) !important;
+}
+
+.color-tertiary {
+	color: var(--tertiary-40) !important;
+}
+
+.color-on-tertiary {
+	color: var(--tertiary-90) !important;
+}
+
+.color-error {
+	color: var(--error-40) !important;
+}
+
+.color-on-error {
+	color: var(--error-90) !important;
+}
+
+.color-background {
+	color: var(--neutral-99) !important;
+}
+
+.color-surface {
+	color: var(--neutral-99) !important;
+}
+
+.color-surface-variant {
+	color: var(--neutral-v-90) !important;
+}
+
+/*--------------------------------------------------------------
+# DARK THEME COLORS
+--------------------------------------------------------------*/
+
+.dark .bg-primary {
+	color: var(--primary-20);
+	background-color: var(--primary-80);
+}
+
+.dark .bg-primary-05 {
+	color: #FFFFFF;
+	background-color: var(--primary-dark-opacity-05);
+}
+
+.dark .bg-primary-12 {
+	color: #FFFFFF;
+	background-color: var(--primary-dark-opacity-12);
+}
+
+.dark .bg-primary-16 {
+	color: #FFFFFF;
+	background-color: var(--primary-dark-opacity-16);
+}
+
+.dark .bg-primary-32 {
+	color: #FFFFFF;
+	background-color: var(--primary-dark-opacity-32);
+}
+
+.dark .bg-primary-64 {
+	color: #FFFFFF;
+	background-color: var(--primary-dark-opacity-64);
+}
+
+.dark .bg-on-primary {
+	color: var(--primary-90);
+	background-color: var(--primary-30);
+}
+
+.dark .bg-secondary {
+	color: var(--secondary-20);
+	background-color: var(--secondary-80);
+}
+
+.dark .bg-on-secondary {
+	color: var(--secondary-90);
+	background-color: var(--secondary-30);
+}
+
+.dark .bg-tertiary {
+	color: var(--tertiary-20);
+	background-color: var(--tertiary-80);
+}
+
+.dark .bg-on-tertiary {
+	color: var(--tertiary-90);
+	background-color: var(--tertiary-30);
+}
+
+.dark .bg-error {
+	color: var(--error-20);
+	background-color: var(--error-80);
+}
+
+.dark .bg-on-error {
+	color: var(--error-90);
+	background-color: var(--error-30);
+}
+
+.dark.bg-background,
+.dark .bg-background {
+	color: var(--neutral-90);
+	background-color: var(--neutral-10);
+}
+
+.dark .bg-surface {
+	color: var(--neutral-80);
+	background-color: var(--neutral-10);
+}
+
+.dark .bg-surface-variant {
+	color: var(--neutral-v-80);
+	background-color: var(--neutral-v-30);
+}
+
+.dark .outline {
+	border: 1px solid var(--neutral-v-60);
+}
+
+/*--------------------------------------------------------------
+# DARK THEME COLORS
+--------------------------------------------------------------*/
+
+.dark .color-primary {
+	color: var(--primary-80) !important;
+}
+
+.dark .color-on-primary {
+	color: var(--primary-30) !important;
+}
+
+.dark .color-secondary {
+	color: var(--secondary-80) !important;
+}
+
+.dark .color-on-secondary {
+	color: var(--secondary-30) !important;
+}
+
+.dark .color-tertiary {
+	color: var(--tertiary-80) !important;
+}
+
+.dark .color-on-tertiary {
+	color: var(--tertiary-30) !important;
+}
+
+.dark .color-error {
+	color: var(--error-80) !important;
+}
+
+.dark .color-on-error {
+	color: var(--error-30) !important;
+}
+
+.dark .color-background {
+	color: var(--neutral-10) !important;
+}
+
+.dark .color-surface {
+	color: var(--neutral-10) !important;
+}
+
+.dark .color-surface-variant {
+	color: var(--neutral-v-30) !important;
+}
+
+/*--------------------------------------------------------------
+# BACKGROUND COLORS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - PRIMARY BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-primary-10 {
+	background-color: var(--primary-10) !important;
+}
+
+.bg-primary-20 {
+	background-color: var(--primary-20) !important;
+}
+
+.bg-primary-30 {
+	background-color: var(--primary-30) !important;
+}
+
+.bg-primary-40 {
+	background-color: var(--primary-40) !important;
+}
+
+.bg-primary-50 {
+	background-color: var(--primary-50) !important;
+}
+
+.bg-primary-60 {
+	background-color: var(--primary-60) !important;
+}
+
+.bg-primary-70 {
+	background-color: var(--primary-70) !important;
+}
+
+.bg-primary-80 {
+	background-color: var(--primary-80) !important;
+}
+
+.bg-primary-90 {
+	background-color: var(--primary-90) !important;
+}
+
+.bg-primary-95 {
+	background-color: var(--primary-95) !important;
+}
+
+.bg-primary-99 {
+	background-color: var(--primary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - SECONDARY BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-secondary-10 {
+	background-color: var(--secondary-10) !important;
+}
+
+.bg-secondary-20 {
+	background-color: var(--secondary-20) !important;
+}
+
+.bg-secondary-30 {
+	background-color: var(--secondary-30) !important;
+}
+
+.bg-secondary-40 {
+	background-color: var(--secondary-40) !important;
+}
+
+.bg-secondary-50 {
+	background-color: var(--secondary-50) !important;
+}
+
+.bg-secondary-60 {
+	background-color: var(--secondary-60) !important;
+}
+
+.bg-secondary-70 {
+	background-color: var(--secondary-70) !important;
+}
+
+.bg-secondary-80 {
+	background-color: var(--secondary-80) !important;
+}
+
+.bg-secondary-90 {
+	background-color: var(--secondary-90) !important;
+}
+
+.bg-secondary-95 {
+	background-color: var(--secondary-95) !important;
+}
+
+.bg-secondary-99 {
+	background-color: var(--secondary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - TERTIARY BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-tertiary-10 {
+	background-color: var(--tertiary-10) !important;
+}
+
+.bg-tertiary-20 {
+	background-color: var(--tertiary-20) !important;
+}
+
+.bg-tertiary-30 {
+	background-color: var(--tertiary-30) !important;
+}
+
+.bg-tertiary-40 {
+	background-color: var(--tertiary-40) !important;
+}
+
+.bg-tertiary-50 {
+	background-color: var(--tertiary-50) !important;
+}
+
+.bg-tertiary-60 {
+	background-color: var(--tertiary-60) !important;
+}
+
+.bg-tertiary-70 {
+	background-color: var(--tertiary-70) !important;
+}
+
+.bg-tertiary-80 {
+	background-color: var(--tertiary-80) !important;
+}
+
+.bg-tertiary-90 {
+	background-color: var(--tertiary-90) !important;
+}
+
+.bg-tertiary-95 {
+	background-color: var(--tertiary-95) !important;
+}
+
+.bg-tertiary-99 {
+	background-color: var(--tertiary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - ERROR BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-error-10 {
+	background-color: var(--error-10) !important;
+}
+
+.bg-error-20 {
+	background-color: var(--error-20) !important;
+}
+
+.bg-error-30 {
+	background-color: var(--error-30) !important;
+}
+
+.bg-error-40 {
+	background-color: var(--error-40) !important;
+}
+
+.bg-error-50 {
+	background-color: var(--error-50) !important;
+}
+
+.bg-error-60 {
+	background-color: var(--error-60) !important;
+}
+
+.bg-error-70 {
+	background-color: var(--error-70) !important;
+}
+
+.bg-error-80 {
+	background-color: var(--error-80) !important;
+}
+
+.bg-error-90 {
+	background-color: var(--error-90) !important;
+}
+
+.bg-error-95 {
+	background-color: var(--error-95) !important;
+}
+
+.bg-error-99 {
+	background-color: var(--error-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - NEUTRAL BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-neutral-10 {
+	background-color: var(--neutral-10) !important;
+}
+
+.bg-neutral-20 {
+	background-color: var(--neutral-20) !important;
+}
+
+.bg-neutral-30 {
+	background-color: var(--neutral-30) !important;
+}
+
+.bg-neutral-40 {
+	background-color: var(--neutral-40) !important;
+}
+
+.bg-neutral-50 {
+	background-color: var(--neutral-50) !important;
+}
+
+.bg-neutral-60 {
+	background-color: var(--neutral-60) !important;
+}
+
+.bg-neutral-70 {
+	background-color: var(--neutral-70) !important;
+}
+
+.bg-neutral-80 {
+	background-color: var(--neutral-80) !important;
+}
+
+.bg-neutral-90 {
+	background-color: var(--neutral-90) !important;
+}
+
+.bg-neutral-95 {
+	background-color: var(--neutral-95) !important;
+}
+
+.bg-neutral-99 {
+	background-color: var(--neutral-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - NEUTRAL VARIANT BACKGROUND
+--------------------------------------------------------------*/
+
+.bg-neutral-v-10 {
+	background-color: var(--neutral-v-10) !important;
+}
+
+.bg-neutral-v-20 {
+	background-color: var(--neutral-v-20) !important;
+}
+
+.bg-neutral-v-30 {
+	background-color: var(--neutral-v-30) !important;
+}
+
+.bg-neutral-v-40 {
+	background-color: var(--neutral-v-40) !important;
+}
+
+.bg-neutral-v-50 {
+	background-color: var(--neutral-v-50) !important;
+}
+
+.bg-neutral-v-60 {
+	background-color: var(--neutral-v-60) !important;
+}
+
+.bg-neutral-v-70 {
+	background-color: var(--neutral-v-70) !important;
+}
+
+.bg-neutral-v-80 {
+	background-color: var(--neutral-v-80) !important;
+}
+
+.bg-neutral-v-90 {
+	background-color: var(--neutral-v-90) !important;
+}
+
+.bg-neutral-v-95 {
+	background-color: var(--neutral-v-95) !important;
+}
+
+.bg-neutral-v-99 {
+	background-color: var(--neutral-v-99) !important;
+}
+
+/*--------------------------------------------------------------
+##  COLORS - TONAL PALLETE - PRIMARY BACKGROUND
+--------------------------------------------------------------*/
+
+.color-primary-10 {
+	color: var(--primary-10) !important;
+}
+
+.color-primary-20 {
+	color: var(--primary-20) !important;
+}
+
+.color-primary-30 {
+	color: var(--primary-30) !important;
+}
+
+.color-primary-40 {
+	color: var(--primary-40) !important;
+}
+
+.color-primary-50 {
+	color: var(--primary-50) !important;
+}
+
+.color-primary-60 {
+	color: var(--primary-60) !important;
+}
+
+.color-primary-70 {
+	color: var(--primary-70) !important;
+}
+
+.color-primary-80 {
+	color: var(--primary-80) !important;
+}
+
+.color-primary-90 {
+	color: var(--primary-90) !important;
+}
+
+.color-primary-95 {
+	color: var(--primary-95) !important;
+}
+
+.color-primary-99 {
+	color: var(--primary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - SECONDARY BACKGROUND
+--------------------------------------------------------------*/
+
+.color-secondary-10 {
+	color: var(--secondary-10) !important;
+}
+
+.color-secondary-20 {
+	color: var(--secondary-20) !important;
+}
+
+.color-secondary-30 {
+	color: var(--secondary-30) !important;
+}
+
+.color-secondary-40 {
+	color: var(--secondary-40) !important;
+}
+
+.color-secondary-50 {
+	color: var(--secondary-50) !important;
+}
+
+.color-secondary-60 {
+	color: var(--secondary-60) !important;
+}
+
+.color-secondary-70 {
+	color: var(--secondary-70) !important;
+}
+
+.color-secondary-80 {
+	color: var(--secondary-80) !important;
+}
+
+.color-secondary-90 {
+	color: var(--secondary-90) !important;
+}
+
+.color-secondary-95 {
+	color: var(--secondary-95) !important;
+}
+
+.color-secondary-99 {
+	color: var(--secondary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - TERTIARY BACKGROUND
+--------------------------------------------------------------*/
+
+.color-tertiary-10 {
+	color: var(--tertiary-10) !important;
+}
+
+.color-tertiary-20 {
+	color: var(--tertiary-20) !important;
+}
+
+.color-tertiary-30 {
+	color: var(--tertiary-30) !important;
+}
+
+.color-tertiary-40 {
+	color: var(--tertiary-40) !important;
+}
+
+.color-tertiary-50 {
+	color: var(--tertiary-50) !important;
+}
+
+.color-tertiary-60 {
+	color: var(--tertiary-60) !important;
+}
+
+.color-tertiary-70 {
+	color: var(--tertiary-70) !important;
+}
+
+.color-tertiary-80 {
+	color: var(--tertiary-80) !important;
+}
+
+.color-tertiary-90 {
+	color: var(--tertiary-90) !important;
+}
+
+.color-tertiary-95 {
+	color: var(--tertiary-95) !important;
+}
+
+.color-tertiary-99 {
+	color: var(--tertiary-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - ERROR BACKGROUND
+--------------------------------------------------------------*/
+
+.color-error-10 {
+	color: var(--error-10) !important;
+}
+
+.color-error-20 {
+	color: var(--error-20) !important;
+}
+
+.color-error-30 {
+	color: var(--error-30) !important;
+}
+
+.color-error-40 {
+	color: var(--error-40) !important;
+}
+
+.color-error-50 {
+	color: var(--error-50) !important;
+}
+
+.color-error-60 {
+	color: var(--error-60) !important;
+}
+
+.color-error-70 {
+	color: var(--error-70) !important;
+}
+
+.color-error-80 {
+	color: var(--error-80) !important;
+}
+
+.color-error-90 {
+	color: var(--error-90) !important;
+}
+
+.color-error-95 {
+	color: var(--error-95) !important;
+}
+
+.color-error-99 {
+	color: var(--error-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - NEUTRAL BACKGROUND
+--------------------------------------------------------------*/
+
+.color-neutral-10 {
+	color: var(--neutral-10) !important;
+}
+
+.color-neutral-20 {
+	color: var(--neutral-20) !important;
+}
+
+.color-neutral-30 {
+	color: var(--neutral-30) !important;
+}
+
+.color-neutral-40 {
+	color: var(--neutral-40) !important;
+}
+
+.color-neutral-50 {
+	color: var(--neutral-50) !important;
+}
+
+.color-neutral-60 {
+	color: var(--neutral-60) !important;
+}
+
+.color-neutral-70 {
+	color: var(--neutral-70) !important;
+}
+
+.color-neutral-80 {
+	color: var(--neutral-80) !important;
+}
+
+.color-neutral-90 {
+	color: var(--neutral-90) !important;
+}
+
+.color-neutral-95 {
+	color: var(--neutral-95) !important;
+}
+
+.color-neutral-99 {
+	color: var(--neutral-99) !important;
+}
+
+/*--------------------------------------------------------------
+## BACKGROUND COLORS - TONAL PALLETE - NEUTRAL VARIANT BACKGROUND
+--------------------------------------------------------------*/
+
+.color-neutral-v-10 {
+	color: var(--neutral-v-10) !important;
+}
+
+.color-neutral-v-20 {
+	color: var(--neutral-v-20) !important;
+}
+
+.color-neutral-v-30 {
+	color: var(--neutral-v-30) !important;
+}
+
+.color-neutral-v-40 {
+	color: var(--neutral-v-40) !important;
+}
+
+.color-neutral-v-50 {
+	color: var(--neutral-v-50) !important;
+}
+
+.color-neutral-v-60 {
+	color: var(--neutral-v-60) !important;
+}
+
+.color-neutral-v-70 {
+	color: var(--neutral-v-70) !important;
+}
+
+.color-neutral-v-80 {
+	color: var(--neutral-v-80) !important;
+}
+
+.color-neutral-v-90 {
+	color: var(--neutral-v-90) !important;
+}
+
+.color-neutral-v-95 {
+	color: var(--neutral-v-95) !important;
+}
+
+.color-neutral-v-99 {
+	color: var(--neutral-v-99) !important;
+}

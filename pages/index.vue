@@ -14,9 +14,15 @@ const blocksList = {
           classes: ['xs-2'],
           blocks: [
             {
-              name: 'text',
-              classes: ['text-body-l'],
-              content: 'Left side',
+              name: 'sheet',
+              classes: ['bg-primary-40'],
+              blocks: [
+                {
+                  name: 'text',
+                  classes: ['text-body-l'],
+                  content: 'Left side',
+                },
+              ],
             },
           ],
         },
