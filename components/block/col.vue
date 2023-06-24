@@ -16,6 +16,7 @@ const props = defineProps({
 const getComponent = {
   row: resolveComponent('Row'),
   text: resolveComponent('Text'),
+  sheet: resolveComponent('Sheet'),
 };
 </script>
 

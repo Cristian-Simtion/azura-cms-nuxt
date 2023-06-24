@@ -20,8 +20,6 @@ const getComponent = {
   </div>
 </template>
 
-
-
 <style>
 .container {
   margin-left: auto;
