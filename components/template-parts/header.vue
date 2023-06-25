@@ -25,7 +25,7 @@ export default {
 
 <style>
 .list-simtion {
-  background-color: red;
+  background-color: green;
 }
 
 .simtion-active {
