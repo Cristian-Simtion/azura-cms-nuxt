@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <ul class="list-simtion">
+  <ul class="list-simtion bg-neutral-90">
     <li :class="{ 'simtion-active': isToggled }">
       <NuxtLink to="/">Home</NuxtLink>
     </li>
@@ -24,11 +24,5 @@ export default {
 </template>
 
 <style>
-.list-simtion {
-  background-color: green;
-}
 
-.simtion-active {
-  background-color: blue;
-}
 </style>
