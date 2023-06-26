@@ -1,18 +1,38 @@
-<script setup>
-import { ref } from 'vue';
+<script>
+import { ref, watch } from 'vue';
 
-const props = defineProps({
-  block: Object,
-});
+export default {
+  props: {
+    block: {
+      type: Object,
+      required: true
+    }
+  },
+  setup(props) {
+    // Definim o referință reactivă pentru conținutul paragrafului
+    const content = ref(props.block.content);
 
-const content = ref(props.block.content);
+    // Urmarim schimbările în prop-ul "block.content" și actualizăm conținutul paragrafului
+    watch(() => props.block.content, (newValue) => {
+      content.value = newValue;
+    });
+
+    // Definim metoda care actualizează conținutul paragrafului
+    const updateContent = (event) => {
+      content.value = event.target.innerText;
+    };
+
+    // Returnăm conținutul și metoda pentru a le utiliza în template
+    return {
+      content,
+      updateContent
+    };
+  }
+};
 </script>
 
 <template>
-  <p class="text" :class="block.classes">
-    {{ content }}
-  </p>
-  <input type="text" v-model="content" />
+  <p class="text" :class="block.classes" contenteditable="true" @input="updateContent">{{ content }}</p>
 </template>
 
 <style>
