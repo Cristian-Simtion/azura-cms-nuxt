@@ -1,13 +1,18 @@
 <script setup>
+import { ref } from 'vue';
+
 const props = defineProps({
   block: Object,
 });
+
+const content = ref(props.block.content);
 </script>
 
 <template>
   <p class="text" :class="block.classes">
-    {{ block.content }}
+    {{ content }}
   </p>
+  <input type="text" v-model="content" />
 </template>
 
 <style>
